@@ -26,19 +26,18 @@ namespace TDDSample.Tests
             {
                 for (var b = -100d; b < 100d; b++)
                 {
-                    var expected = a/b;
-
-                    AssertRange(calculator, a, b, expected);
+                    AssertRange(calculator, a, b);
                 }
             }
         }
 
-        private static void AssertRange(Calculator calculator, double a, double b, double expected)
+        private static void AssertRange(Calculator calculator, double a, double b)
         {
+            var expected = a/b;
             var actual = calculator.Divide(a, b);
 
             Assert.AreEqual(expected, actual);
-            Assert.IsFalse(Double.IsInfinity(actual));
+            Assert.IsFalse(double.IsInfinity(actual));
         }
     }
 }
