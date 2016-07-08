@@ -11,7 +11,7 @@ namespace UnitTestingSample.Tests
         {
             // arrange
             int age = 50;
-            float expected = (20000*(age - 20))*0.5f;
+            float expected = (20000*(age - 20))*1;
             var salary = new Salary("John", age);
 
             // act
