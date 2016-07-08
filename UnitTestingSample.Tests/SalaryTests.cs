@@ -55,5 +55,13 @@ namespace UnitTestingSample.Tests
 
             Assert.Fail("No exception was thrown");
         }
+
+        //- Assert.AreEquals: This fails when two values differ
+        //- Assert.AreSame: This fails when two objects point to different locations
+        //- Assert.Fail: This fails irrespective of any logic
+        //- Assert.IsTrue/Assert.IsFalse: This determines the failure based on a true or false condition
+        //- Assert.IsNull/Assert.IsNotNull: This fails when an object points to null
+        //Similar to Assert, there are a number of other classes that are used to test values, 
+        //such as StringAssert and CollectionAssert, which work specially on a set of types.
     }
 }
