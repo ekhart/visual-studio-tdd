@@ -20,6 +20,11 @@ namespace UnitTestingSample
             this.age = age;
         }
 
+        static string GetName(Salary salary)
+        {
+            return salary.name;
+        }
+
         // For simplicity we define salary by age
         public float GetSalary()
         {
