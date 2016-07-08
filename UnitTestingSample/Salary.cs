@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestingSample
 {
-    class Salary
+    public class Salary
     {
         public const string ARGUMENTLESSTHAN20 = "Cannot calculate salary of a person below age 20";
         public const string ARGUMENTGREATERTHAN85 = "You are too old to be valid for pension";
