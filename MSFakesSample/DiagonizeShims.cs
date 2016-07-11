@@ -24,14 +24,14 @@ namespace MSFakesSample
             Directory.Delete(dirLocation, true);
         }
 
-        //public string GetEventName(ILogger logger)
-        //{
-        //    if (logger.IsLoggerEnabled)
-        //    {
-        //        logger.IsLoggerEnabled("GetEventName method is called.");
-        //    }
+        public string GetEventName(ILogger logger)
+        {
+            if (logger.IsLoggerEnabled)
+            {
+                logger.Log("GetEventName method is called.");
+            }
 
-        //    return "Sample Event";
-        //}
+            return "Sample Event";
+        }
     }
 }

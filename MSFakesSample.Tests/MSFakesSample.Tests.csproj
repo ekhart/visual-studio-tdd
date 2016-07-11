@@ -96,8 +96,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DiagonizeStubs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DiagonizeShimsTests.cs" />
+    <Compile Include="StubLogger.cs" />
+    <Compile Include="StubObserver.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MSFakesSample\MSFakesSample.csproj">
