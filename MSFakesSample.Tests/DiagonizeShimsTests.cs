@@ -17,5 +17,43 @@ namespace MSFakesSample.Tests
                 DiagonizeShims.DoomsDay();
             //}
         }
+
+        [TestMethod]
+        //[ExpectedException(typeof(ShimNotImplementedException))]
+        public void DeleteDirectory_BehaveNotImplemented()
+        {
+            //using (ShimsContext.Create())
+            //{
+            //    ShimDirectory.BehaveAsNotImplemented();
+            //    var appData = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            //    DiagonizeShims.DeleteTemporaryData(appData);
+            //}
+        }
+
+        [TestMethod]
+        public void GetEventName_Test()
+        {
+            //var logger = new StubLogger {IsLoggerEnabled = () => true};
+            //var diagonizeStubs = new DiagonizeStubs();
+
+            //var result = diagonizeStubs.GetEventName(logger);
+
+            //Assert.IsFalse(string.IsNullOrEmpty(result));
+        }
+
+        [TestMethod]
+        public void GetEventName_Test_Fakes()
+        {
+            //var stubLogger = new StubLogger { IsLoggerEnabled = () => true };
+            //var diagonizeStubs = new DiagonizeStubs();
+            //var observer = new StubObserver();
+            //stubLogger.InstanceObserver = observer;
+
+            //diagonizeStubs.GetEventName(stubLogger);
+            //var calls = observer.GetCalls();
+
+            //Assert.IsNotNull(calls);
+            //Assert.AreEqual(2, calls.Length);
+        }
     }
 }

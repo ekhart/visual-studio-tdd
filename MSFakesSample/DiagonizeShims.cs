@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,5 +18,20 @@ namespace MSFakesSample
 
             // other code
         }
+
+        public static void DeleteTemporaryData(string dirLocation)
+        {
+            Directory.Delete(dirLocation, true);
+        }
+
+        //public string GetEventName(ILogger logger)
+        //{
+        //    if (logger.IsLoggerEnabled)
+        //    {
+        //        logger.IsLoggerEnabled("GetEventName method is called.");
+        //    }
+
+        //    return "Sample Event";
+        //}
     }
 }
